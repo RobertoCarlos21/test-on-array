@@ -1,0 +1,16 @@
+list = [ 2000, 2600, 2130, 2190]
+sum = list[1] - list[0]
+print(sum)
+quarter = list[0] + list[1] + list[2]
+print(quarter)
+for i in range(len(list)):
+    if list[i] == 2000:
+        print("Good you have spent exactly 2000 dollars in any of the months.")
+        break
+    else:
+        print("You have not spend 2000 dollars in any month.")
+        break
+list.append(1980)
+refund = list[2] - 200
+print(list)
+print("Expenses after 200$ return in April:",refund)
